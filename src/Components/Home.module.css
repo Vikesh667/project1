@@ -1,0 +1,79 @@
+
+.container{
+    max-width: 1200px;
+    margin:2rem auto 0 auto;
+    
+}
+
+.heroSection{
+    width: 100%;
+    display:flex;
+    margin-top:2rem;
+    align-items: center;
+   
+}
+
+.heroImage img{
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.heroText{
+    padding: 0 1rem;
+    text-align: justify;
+    font-family: "Gill Sans", sans-serif;
+}
+
+figcaption p{
+    font-weight: bold;
+}
+
+.skills{
+    column-count: 3;
+    column-width: 160px;
+    column-gap: 3rem;
+    margin-top: 4rem;
+    
+    
+}
+
+.hobbyContent{
+    background-color: aqua;
+    padding: 1rem;
+    border-radius:10px;
+}
+.hobbyContent:hover{
+    background-color: white;
+    color: black;
+
+}
+.hobbyContent h6{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 1007px) {
+    .container{
+        text-align: center;
+    }
+    .heroSection {
+    flex-direction: column;
+    }
+    
+    .heroImage {
+    margin: 1   rem auto;
+    }
+    
+    .skills {
+    column-count: 1;
+    margin:1.5rem ;
+
+    }
+    .hobbyContent{
+        margin: 10px;
+    }
+    }
